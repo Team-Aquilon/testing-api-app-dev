@@ -15,7 +15,7 @@ BACKEND_URL = "https://pattiya-backend-v1.vercel.app/api/v1"
 # Note: If the backend is deployed, use the deployed URL (e.g., https://pattiya-backend.onrender.com/api/v1)
 
 GATEWAY_ID = "GW_001"
-HARDWARE_SECRET = "secret123" # Must match the backend DB
+HARDWARE_SECRET = "gw_secret_ridiyagama_001" # Must match the backend DB
 
 COWS = [
     {"cow_id": "COW_101", "mac": "A4:CF:12:89:C3:D1", "name": "Kalu"},
