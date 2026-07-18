@@ -11,7 +11,7 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(me
 # CONFIGURATION
 # ==========================================
 # Backend API URL - Change this to your local or deployed backend URL
-BACKEND_URL = "http://localhost:5000/api/v1" 
+BACKEND_URL = "https://pattiya-backend-v1.vercel.app/api/v1" 
 # Note: If the backend is deployed, use the deployed URL (e.g., https://pattiya-backend.onrender.com/api/v1)
 
 GATEWAY_ID = "GW_001"
@@ -44,7 +44,7 @@ class BackendClient:
         body = {"gateway_id": self.gateway_id, "hardware_secret": self.secret}
         logging.info(f"Logging in to {url}...")
         try:
-            resp = self.session.post(url, json=body, timeout=10)
+            resp = self.session.post(url, json=body, timeout=30)
             if resp.status_code == 200:
                 data = resp.json().get("data", {})
                 self.token = data.get("gateway_access_token")
@@ -65,7 +65,7 @@ class BackendClient:
         
         url = f"{self.base_url}{endpoint}"
         try:
-            resp = self.session.post(url, json=payload, timeout=10)
+            resp = self.session.post(url, json=payload, timeout=30)
             if resp.status_code == 401:
                 logging.warning("Token expired. Re-authenticating...")
                 self.token = None
