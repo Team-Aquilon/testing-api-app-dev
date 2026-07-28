@@ -18,9 +18,10 @@ GATEWAY_ID = "GW_001"
 HARDWARE_SECRET = "gw_secret_ridiyagama_001" # Must match the backend DB
 
 COWS = [
-    {"cow_id": "COW_101", "mac": "A4:CF:12:89:C3:D1", "name": "Kalu"},
-    {"cow_id": "COW_102", "mac": "A4:CF:12:89:C3:D2", "name": "Suddi"},
-    {"cow_id": "COW_103", "mac": "A4:CF:12:89:C3:D3", "name": "Raththi"}
+    {"cow_id": "COW_MMB2H65B_SZM", "mac": "A4:CF:12:89:C3:D1", "name": "Suddi"},
+    {"cow_id": "COW_MMB2H6MR_H7A", "mac": "B2:DA:45:12:E4:C9", "name": "Kalu"},
+    {"cow_id": "COW_MMB2H7AS_GVF", "mac": "C1:E4:77:89:D2:A1", "name": "Raththi"},
+    {"cow_id": "COW_MS59R9BF",     "mac": "1C:DB:D4:45:73:04", "name": "test cow 2"},  # ESP32-S3 collar
 ]
 
 # Time to wait between simulation cycles (in seconds)
