@@ -11,7 +11,7 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(me
 # CONFIGURATION
 # ==========================================
 # Backend API URL - Change this to your local or deployed backend URL
-BACKEND_URL = "https://pattiya-backend-v1.vercel.app/api/v1" 
+BACKEND_URL = "https://pattiya-v1-backend.sinethwickramaratna.dev/api/v1" 
 # Note: If the backend is deployed, use the deployed URL (e.g., https://pattiya-backend.onrender.com/api/v1)
 
 GATEWAY_ID = "GW_001"
